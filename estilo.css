@@ -1,0 +1,299 @@
+        /*Configurações Gerais*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 5%;
+}
+
+body{
+    background-color: rgba(246, 243, 243, 0.979);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.limpa{
+    clear: both;
+}
+
+        /*Cabeçalho*/
+header{
+    height: 90px;
+    background-color: rgba(143, 188, 143, 0.7);/*rgba(143, 188, 143, 0.7*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+/*INICIO Logo*/
+#logo{
+    float: left;
+}
+
+#logo img{
+    float: left;
+}
+
+#logo .span1{
+    color: rgb(87, 13, 156);/*rg*b*(70, 8, 128)*/
+}
+
+#logo .span2{
+    color: white;
+}
+
+/*FIM Logo*/
+
+/*INICIO Menu*/
+#menu{
+    float: right;
+}
+
+#menu ul{
+    float: right;
+    list-style-type: none;
+    display: flex;
+}
+
+#menu ul li{
+    float: right;
+    margin: 25px 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+#menu ul li a{
+    float: right;
+}
+
+
+#menu_hamburguer{
+    cursor: pointer;
+    float: right;
+    padding: 15px 15px 0 0;
+    display: none;
+}
+
+
+#menu_hamburguer div{
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+}
+/*FIM Menu*/
+
+        /*Conteudo Principal*/
+
+#principal{
+    height: 500px;
+    background-color: rgba(143, 188, 143, 0.7);
+}
+#texto{
+    float: left;
+    margin: 6vh 0 6vh 2vw;
+    width: 40vw;
+}
+
+#texto h2{
+    font-size: 3.5rem;
+    font-weight: 100;
+    line-height: 1.5;
+    font-family: inherit;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px rgba(80, 74, 74, 0.4);
+}
+
+#texto h3{
+    margin-top: 3vh;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: inherit;
+}
+
+#texto input{
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    width: 70%;
+    margin: 10px 0;
+}
+
+#texto button{
+    background-color: rgb(87, 13, 156);
+    color: white;
+    border: none;
+    margin-left: -10px;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 4px 4px 0;
+    width: 20%;
+}
+
+#imagem{
+    float: right;
+    margin: 10px 5vw 0 5vw;
+}
+
+#imagem img{
+    border-radius: 8px;
+}
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width:720px) {
+
+    #logo h1{
+        float: right;
+        font-size: 1.5em;
+        margin-top: 30px;
+        font-weight: 200;
+        letter-spacing: -3px;
+        display: none;
+    }
+
+    #menu_hamburguer{
+        cursor: pointer;
+        float: right;
+        padding: 20px 15px 0 0;
+        display: block;
+    }
+
+    #menu{
+        position: absolute;
+        top: 90px;
+        left: -110%;
+        transition: all 0.7s;
+    }
+
+    #menu ul{
+        flex-direction: column;
+        background-color: rgba(143, 188, 143, 0.7);
+        width: 100vw;
+    }
+
+    #menu ul li{
+        float: right;
+        margin: 20px 20px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    #texto{
+        float: left;
+        margin: 6vh 0 6vh 2vw;
+        width: 90vw;
+    }
+
+    #texto h2{
+        font-size: 2.2rem;
+        font-weight: 300;
+        line-height: 1.5;
+        font-family: inherit;
+        letter-spacing: 3px;
+        text-shadow: 3px 3px rgba(80, 74, 74, 0.1);
+    }
+
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 720px) and (max-width: 992px) {
+    #logo h1{
+        float: right;
+        font-size: 1.5em;
+        margin-top: 30px;
+        font-weight: 200;
+        letter-spacing: -3px;
+        display: none;
+    }
+
+        
+    #imagem{
+        float: right;
+        margin-top: 10px 0;
+    }
+
+    #texto{
+        float: left;
+        margin-top: 2vh;
+        width: 35vw;
+    }
+    
+    #texto h2{
+        font-size: 2.8rem;
+        font-weight: 100;
+        line-height: 1.5;
+        font-family: inherit;
+        letter-spacing: 3px;
+        text-shadow: 3px 3px rgba(80, 74, 74, 0.4);
+    }
+    
+    #texto h3{
+        margin-top: 3vh;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        font-family: inherit;
+    }
+    
+    #texto input{
+        border: none;
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 4px;
+        width: 70%;
+        margin: 10px 0;
+    }
+    
+    #texto button{
+        background-color: rgb(87, 13, 156);
+        color: white;
+        border: none;
+        margin-left: -10px;
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 0 4px 4px 0;
+        width: 20%;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #logo h1{
+        float: right;
+        font-size: 1.5em;
+        margin-top: 30px;
+        font-weight: 200;
+        letter-spacing: -3px;
+        display: block;
+    }
+
+    #menu ul li{
+        float: right;
+        margin: 30px 10px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-weight: 100;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

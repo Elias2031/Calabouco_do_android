@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A melhor loja de quadrinhos de Springfield">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="js/jquery.js"></script>
+    <title>Home - Calabouço do android encontre os quadrinhos mais procurados!!!</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <h1>
+                    <span class="span1">C</span>
+                    <span class="span2">a</span>
+                    <span class="span1">l</span>
+                    <span class="span2">A</span>
+                    <span class="span1">b</span>
+                    <span class="span2">o</span>
+                    <span class="span1">u</span>
+                    <span class="span2">ç</span>
+                    <span class="span1">O</span>
+                    <span class="span2" style="margin: 0 4px;"> DO </span>
+                    <span class="span1">A</span>
+                    <span class="span2">n</span>
+                    <span class="span1">d</span>
+                    <span class="span2">r</span>
+                    <span class="span1">O</span>
+                    <span class="span2">i</span>
+                    <span class="span1">d</span>
+                </h1>
+                <a href="#"></a>
+                <img src="img/logo.png" width="80" alt="Calabouço do Android">
+                </a>
+            </div>
+
+            <div id="menu_hamburguer">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Lançamentos</a></li>
+                    <li><a href="#">Quadrinhos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="limpa">
+        <section id="principal">
+            <div class="container">
+
+                <div id="imagem">
+                    <img id="capa" src="img/homem_radioativo_bart.jpg" alt="homem radioativo" width="300">
+                </div>
+
+                <div id="texto">
+                    <h2>Encontre as edições mais raras aqui</h2>
+                    <input type="text" placeholder="Oque está buscando?">
+                    <button>enviar</button>
+                    <h3>Mais de 2000 edições para você aproveitar, venha e encontre seu super heroi favorito</h3>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section>
+
+        </section>
+    </main>
+
+    <script>
+        $('#menu_hamburguer').on('click', () => {
+            if ($('#menu').css('left') < '0') {
+                $('#menu').css('left', '0')
+            } else {
+                $('#menu').css('left', '-110%')
+            }
+        })
+    </script>
+</body>
+
+</html>
