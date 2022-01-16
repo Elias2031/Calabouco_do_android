@@ -14,6 +14,10 @@ body{
     background-color: rgba(246, 243, 243, 0.979);
 }
 
+body,html{
+    overflow-x: hidden;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -71,7 +75,6 @@ header{
     float: right;
 }
 
-
 #menu_hamburguer{
     cursor: pointer;
     float: right;
@@ -94,13 +97,14 @@ header{
     height: 500px;
     background-color: rgba(143, 188, 143, 0.7);
 }
-#texto{
+
+#texto1{
     float: left;
     margin: 6vh 0 6vh 2vw;
     width: 40vw;
 }
 
-#texto h2{
+.texto h2{
     font-size: 3.5rem;
     font-weight: 100;
     line-height: 1.5;
@@ -109,7 +113,7 @@ header{
     text-shadow: 3px 3px rgba(80, 74, 74, 0.4);
 }
 
-#texto h3{
+.texto h3{
     margin-top: 3vh;
     font-size: 1rem;
     font-weight: 400;
@@ -117,7 +121,7 @@ header{
     font-family: inherit;
 }
 
-#texto input{
+.texto input{
     border: none;
     font-size: 16px;
     text-align: center;
@@ -127,7 +131,7 @@ header{
     margin: 10px 0;
 }
 
-#texto button{
+.texto button{
     background-color: rgb(87, 13, 156);
     color: white;
     border: none;
@@ -139,14 +143,62 @@ header{
     width: 20%;
 }
 
-#imagem{
+#imagem1{
     float: right;
-    margin: 10px 5vw 0 5vw;
+    margin: 10px 6vw 0 0;
 }
 
-#imagem img{
+.imagem img{
     border-radius: 8px;
 }
+
+/*Comichão e Coçadinha*/
+#texto2{
+    float: right;
+    margin: 6vh 0 6vh 0;
+    width: 40vw;
+}
+
+#imagem2{
+    float: left;
+    margin: 10px 0 0 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -165,6 +217,11 @@ header{
         display: none;
     }
 
+    #principal{
+        height: 850px;
+        background-color: rgba(143, 188, 143, 0.7);
+    }
+
     #menu_hamburguer{
         cursor: pointer;
         float: right;
@@ -181,7 +238,7 @@ header{
 
     #menu ul{
         flex-direction: column;
-        background-color: rgba(143, 188, 143, 0.7);
+        background-color: rgba(143, 188, 143, 0.9);
         width: 100vw;
     }
 
@@ -190,16 +247,21 @@ header{
         margin: 20px 20px;
         font-size: 20px;
         letter-spacing: 2px;
-        text-align: center;
     }
 
-    #texto{
+    #texto1{
         float: left;
         margin: 6vh 0 6vh 2vw;
         width: 90vw;
     }
 
-    #texto h2{
+    #texto2{
+        float: right;
+        margin: 6vh 0 0 0;
+        width: 96%;
+    }
+
+    .texto h2{
         font-size: 2.2rem;
         font-weight: 300;
         line-height: 1.5;
@@ -207,7 +269,6 @@ header{
         letter-spacing: 3px;
         text-shadow: 3px 3px rgba(80, 74, 74, 0.1);
     }
-
     
 }
 
@@ -223,18 +284,18 @@ header{
     }
 
         
-    #imagem{
+    .imagem{
         float: right;
         margin-top: 10px 0;
     }
 
-    #texto{
+    .texto{
         float: left;
         margin-top: 2vh;
         width: 35vw;
     }
     
-    #texto h2{
+    .texto h2{
         font-size: 2.8rem;
         font-weight: 100;
         line-height: 1.5;
@@ -243,7 +304,7 @@ header{
         text-shadow: 3px 3px rgba(80, 74, 74, 0.4);
     }
     
-    #texto h3{
+    .texto h3{
         margin-top: 3vh;
         font-size: 1rem;
         font-weight: 400;
@@ -251,7 +312,7 @@ header{
         font-family: inherit;
     }
     
-    #texto input{
+    .texto input{
         border: none;
         font-size: 16px;
         text-align: center;
@@ -261,7 +322,7 @@ header{
         margin: 10px 0;
     }
     
-    #texto button{
+    .texto button{
         background-color: rgb(87, 13, 156);
         color: white;
         border: none;
