@@ -11,3 +11,7 @@ Este projeto foi inspirado loja do "cara dos quadrinhos" da serie Simpsons :
 - HTML
 - CSS
 - jQuery
+
+
+Abaixo a foto da "loja" na qual me inspirei para criar o site
+<img src="img/fachada_loja.jpg">
