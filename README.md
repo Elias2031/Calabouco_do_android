@@ -14,5 +14,5 @@ Este projeto foi inspirado loja do "cara dos quadrinhos" da serie Simpsons :
 Abaixo a foto da "loja" na qual me inspirei para criar o site
 <img src="img/fachada_loja.jpg">
 
-Abaixo uma previa de como ficou o projeto, para ver com mais detalhes visualize o projeto:
+Abaixo uma previa de como ficou o projeto, para ver com mais detalhes visualize o projeto:https://elias2031.github.io/Calabouco_do_android/
 <img src="img/apresentacao_git.png">
