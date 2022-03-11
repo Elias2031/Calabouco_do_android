@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A melhor loja de quadrinhos de Springfield">
     <link rel="stylesheet" href="estilo.css">
-    <script src="js/jquery.js"></script>
     <title>Home - Calabouço do android encontre os quadrinhos mais procurados!!!</title>
+
+
 </head>
 
 <body>
@@ -61,7 +62,7 @@
                     <img src="img/homem_radioativo_bart.jpg" alt="homem radioativo" width="300">
                 </div>
 
-                <div id="texto1" class="texto anime1 anime1-start">
+                <div id="texto1" class="texto">
                     <h2>Encontre as edições mais raras aqui!!</h2>
                     <input type="text" placeholder="Oque está buscando?">
                     <button>enviar</button>
@@ -70,7 +71,7 @@
             </div>
         </section>
 
-        <section id="comcichao_coçadinha">
+        <section id="comichao_coçadinha">
             <div class="container">
                 <div id="imagem2" class="texto">
                     <img src="img/comichao_cocadinha.jpg" alt="homem radioativo" width="300">
@@ -82,19 +83,40 @@
                 </div>
             </div>
         </section>
+
+        <section id="imagens4" class="limpa">
+            <div class="container">
+                <h2 id="edicoes">Nossas melhores edições</h2>
+                <ul>
+                    <li>
+                        <img src="img/krusty.jpg" alt="" width="200">
+                        <p>Krusty edição 1: A primeira e unica revista lançada por Krusty o palhaço</p>
+                    </li>
+                    <li>
+                        <img src="img/interesting_stories.png" alt="" width="200">
+                        <p>Interesting Stories edição 1: A primeira aparição do homem radioativo</p>
+                    </li>
+                    <li>
+                        <img src="img/homem_radioativo_bart2.jpg" alt="" width="200">
+                        <p>Homem radioativo edição 272: Revelada a identidade do Bartman</p>
+                    </li>
+                    <li style="padding-bottom: 30px;">
+                        <img src="img/comichao_cocadinha1.jpg" alt="" width="200">
+                        <p>Krusty edição 1: A primeira e unica revista lançada por Krusty o palhaço</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 
-    <script>
-        $('#menu_hamburguer').on('click', () => {
-            if ($('#menu').css('left') < '0') {
-                $('#menu').css('left', '0')
-            } else {
-                $('#menu').css('left', '-110%')
-            }
-        })
+    <footer>
+        <div class="container">
+            <span> &copy; 2022 Calabouço do Android | Desenvolvido por Elias Silva</span>
+        </div>
+    </footer>
 
-        $('#imagem1').slideDown(3000)
-    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
